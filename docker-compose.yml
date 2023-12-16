@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: pass
+      MARIADB_DATABASE: stonks
+    ports:
+        - 9001:3306
+
